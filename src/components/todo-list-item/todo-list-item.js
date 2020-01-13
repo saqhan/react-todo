@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './todo-list-item.css';
 
 export default class TodoListItem extends Component {
@@ -6,6 +7,14 @@ export default class TodoListItem extends Component {
     
     render() {
     
+=======
+
+import './todo-list-item.css';
+
+export default class TodoListItem extends Component {
+    render() {
+    
+>>>>>>> b4762ce624dc16cf655cddf24b786122be0dd04c
         const { label, important = false  } = this.props;
 
         const style = {
@@ -33,6 +42,10 @@ export default class TodoListItem extends Component {
             </span>
         );
     };
+<<<<<<< HEAD
 }
 
 
+=======
+};
+>>>>>>> b4762ce624dc16cf655cddf24b786122be0dd04c
