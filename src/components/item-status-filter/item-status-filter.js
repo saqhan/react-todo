@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 import './item-status-filter.css';
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b4762ce624dc16cf655cddf24b786122be0dd04c
 export default class ItemStatusFilter extends Component {
     render() {
         return (
