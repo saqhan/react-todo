@@ -2,3 +2,10 @@
     margin-top: 10px;
 }
 
+.item-add-form input {
+    margin-right: 8px;
+}
+
+.form-control {
+    width: 85%;
+}
