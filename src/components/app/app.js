@@ -59,7 +59,15 @@ export default class App extends Component {
         todoData: newArr
       };
     });
-};
+  };
+
+  onToggleDone = (id) => {
+    console.log('Done: ', id);
+  };
+
+  onToggleImportant = (id) => {
+    console.log('Important: ', id);
+  }
 
   toggleProperty(arr, id, propName) {
     const idx = arr.findIndex((el) => el.id === id);
@@ -103,11 +111,18 @@ export default class App extends Component {
           <SearchPanel />
           <ItemStatusFilter />
         </div>
+<<<<<<< HEAD
         <TodoList todos={todoData} 
           onDeleted = {  this.deleteItem }
           onToggleImportant={ this.onToggleImportant }
           onToggleDone={ this.onToggleDone }
         />
+=======
+        <TodoList todos={this.state.todoData} 
+        onDeleted = {  this.deleteItem }
+        onToggleDone= { this.onToggleDone }
+        onToggleImportant= { this.onToggleImportant }/>
+>>>>>>> 119a2a6be223c2ee26206e405f7cb97c7ea9f654
         <ItemAddForm 
           onItemAdded = { this.addItem } />
   
